@@ -1,0 +1,567 @@
+{
+  "dataset": {
+    "source": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt",
+    "total_characters": 320000,
+    "raw_file_characters": 1115394,
+    "train_tokens": 49760,
+    "validation_tokens": 10674,
+    "test_tokens": 10513,
+    "vocabulary": 2329,
+    "validation_oov": 1077,
+    "test_oov": 1336,
+    "config": {
+      "chars": 320000,
+      "seq_len": 16,
+      "stride": 4,
+      "min_freq": 2,
+      "embedding": 48,
+      "hidden": 64,
+      "batch_size": 64,
+      "epochs": 8,
+      "learning_rate": 0.002,
+      "seed": 42,
+      "temperatures": [
+        0.6,
+        1.0,
+        1.4
+      ]
+    },
+    "device": "cpu"
+  },
+  "models": {
+    "Simple RNN": {
+      "parameters": 270473,
+      "training_seconds": 8.597050439999293,
+      "validation_history": [
+        {
+          "loss": 5.346717253321779,
+          "perplexity": 209.9180577380515,
+          "accuracy": 0.13208255159474672,
+          "samples": 2665
+        },
+        {
+          "loss": 5.162600478982836,
+          "perplexity": 174.6179560150453,
+          "accuracy": 0.15084427767354597,
+          "samples": 2665
+        },
+        {
+          "loss": 5.093950385403231,
+          "perplexity": 163.0326333554629,
+          "accuracy": 0.1474671669793621,
+          "samples": 2665
+        },
+        {
+          "loss": 5.087867201470524,
+          "perplexity": 162.0438862739653,
+          "accuracy": 0.14934333958724202,
+          "samples": 2665
+        },
+        {
+          "loss": 5.0908207705499535,
+          "perplexity": 162.52320158296766,
+          "accuracy": 0.1523452157598499,
+          "samples": 2665
+        },
+        {
+          "loss": 5.129251951750851,
+          "perplexity": 168.89073236284506,
+          "accuracy": 0.1527204502814259,
+          "samples": 2665
+        },
+        {
+          "loss": 5.144480429357704,
+          "perplexity": 171.48236431873613,
+          "accuracy": 0.1474671669793621,
+          "samples": 2665
+        },
+        {
+          "loss": 5.197352156361764,
+          "perplexity": 180.79289621894713,
+          "accuracy": 0.14784240150093808,
+          "samples": 2665
+        }
+      ],
+      "best_epoch": 4,
+      "test": {
+        "loss": 5.209799189976284,
+        "perplexity": 183.05729476290625,
+        "accuracy": 0.14933333333333335,
+        "samples": 2625
+      }
+    },
+    "Bidirectional RNN": {
+      "parameters": 426825,
+      "training_seconds": 19.97787235100077,
+      "validation_history": [
+        {
+          "loss": 5.30455307951564,
+          "perplexity": 201.25103910009716,
+          "accuracy": 0.13883677298311445,
+          "samples": 2665
+        },
+        {
+          "loss": 5.199951538314963,
+          "perplexity": 181.2634573297181,
+          "accuracy": 0.14596622889305816,
+          "samples": 2665
+        },
+        {
+          "loss": 5.204054045542991,
+          "perplexity": 182.0086194449478,
+          "accuracy": 0.15084427767354597,
+          "samples": 2665
+        },
+        {
+          "loss": 5.246646914025856,
+          "perplexity": 189.92835346630608,
+          "accuracy": 0.14896810506566605,
+          "samples": 2665
+        },
+        {
+          "loss": 5.328279070827348,
+          "perplexity": 206.08301454202103,
+          "accuracy": 0.1395872420262664,
+          "samples": 2665
+        },
+        {
+          "loss": 5.422128897089001,
+          "perplexity": 226.36050813682087,
+          "accuracy": 0.1373358348968105,
+          "samples": 2665
+        },
+        {
+          "loss": 5.524503702875821,
+          "perplexity": 250.7618547456898,
+          "accuracy": 0.13358348968105066,
+          "samples": 2665
+        },
+        {
+          "loss": 5.645671553906983,
+          "perplexity": 283.0635848647415,
+          "accuracy": 0.1272045028142589,
+          "samples": 2665
+        }
+      ],
+      "best_epoch": 2,
+      "test": {
+        "loss": 5.270770787647792,
+        "perplexity": 194.56587363520399,
+        "accuracy": 0.13028571428571428,
+        "samples": 2625
+      }
+    },
+    "LSTM": {
+      "parameters": 292361,
+      "training_seconds": 11.204859646000841,
+      "validation_history": [
+        {
+          "loss": 5.357323978273775,
+          "perplexity": 212.15645086366132,
+          "accuracy": 0.13470919324577862,
+          "samples": 2665
+        },
+        {
+          "loss": 5.238076112328506,
+          "perplexity": 188.30747126431112,
+          "accuracy": 0.15347091932457785,
+          "samples": 2665
+        },
+        {
+          "loss": 5.178264808296934,
+          "perplexity": 177.3747645910232,
+          "accuracy": 0.15309568480300187,
+          "samples": 2665
+        },
+        {
+          "loss": 5.124260020300774,
+          "perplexity": 168.04974223328693,
+          "accuracy": 0.15722326454033772,
+          "samples": 2665
+        },
+        {
+          "loss": 5.097128295898438,
+          "perplexity": 163.55156058748753,
+          "accuracy": 0.16022514071294558,
+          "samples": 2665
+        },
+        {
+          "loss": 5.086603453101182,
+          "perplexity": 161.83923291933326,
+          "accuracy": 0.15422138836772983,
+          "samples": 2665
+        },
+        {
+          "loss": 5.102010301085395,
+          "perplexity": 164.35197237210377,
+          "accuracy": 0.16210131332082553,
+          "samples": 2665
+        },
+        {
+          "loss": 5.113256125960072,
+          "perplexity": 166.21067761911638,
+          "accuracy": 0.16435272045028143,
+          "samples": 2665
+        }
+      ],
+      "best_epoch": 6,
+      "test": {
+        "loss": 5.201922207514445,
+        "perplexity": 181.62101984507018,
+        "accuracy": 0.16304761904761905,
+        "samples": 2625
+      }
+    },
+    "GRU": {
+      "parameters": 285065,
+      "training_seconds": 17.237098528999923,
+      "validation_history": [
+        {
+          "loss": 5.365976186899038,
+          "perplexity": 214.00003678172115,
+          "accuracy": 0.1373358348968105,
+          "samples": 2665
+        },
+        {
+          "loss": 5.2156183468244315,
+          "perplexity": 184.12563929077626,
+          "accuracy": 0.15196998123827393,
+          "samples": 2665
+        },
+        {
+          "loss": 5.135094882757534,
+          "perplexity": 169.88043783440557,
+          "accuracy": 0.14709193245778612,
+          "samples": 2665
+        },
+        {
+          "loss": 5.093736533331379,
+          "perplexity": 162.99777221673662,
+          "accuracy": 0.1545966228893058,
+          "samples": 2665
+        },
+        {
+          "loss": 5.089590711754661,
+          "perplexity": 162.3234113914535,
+          "accuracy": 0.15909943714821764,
+          "samples": 2665
+        },
+        {
+          "loss": 5.121679756207493,
+          "perplexity": 167.61668845433954,
+          "accuracy": 0.15722326454033772,
+          "samples": 2665
+        },
+        {
+          "loss": 5.180423059517179,
+          "perplexity": 177.7579973006143,
+          "accuracy": 0.15422138836772983,
+          "samples": 2665
+        },
+        {
+          "loss": 5.23022323522514,
+          "perplexity": 186.83450690837594,
+          "accuracy": 0.15422138836772983,
+          "samples": 2665
+        }
+      ],
+      "best_epoch": 5,
+      "test": {
+        "loss": 5.202631285985311,
+        "perplexity": 181.74984906971596,
+        "accuracy": 0.15580952380952381,
+        "samples": 2625
+      }
+    }
+  },
+  "samples": [
+    {
+      "model": "Simple RNN",
+      "seed": "my lord",
+      "temperature": 0.6,
+      "generated": "; for this , to say a man in the people of the heart of . sicinius : no , though , and for you are stay not , nor",
+      "unique_ratio": 0.8,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "my lord",
+      "temperature": 1.0,
+      "generated": ", when : stopp'd honourable , which soul so voices . ope ! absence : is he hath musty , with could when full ; for this , why ;",
+      "unique_ratio": 0.8,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "my lord",
+      "temperature": 1.4,
+      "generated": "truer ; menenius against employ , were he hath and wild , hear : am second cup lack love stand honour him vouchsafe nought harvest the people great brother if",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "i pray you",
+      "temperature": 0.6,
+      "generated": ", and you will be , and it is the gods ; and ! i had general ? brutus : but the city , you are , the people ,",
+      "unique_ratio": 0.7,
+      "repeated_bigram_ratio": 0.03448275862068961
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "i pray you",
+      "temperature": 1.0,
+      "generated": "be the envy ! menenius by once ; let out not the mercy fault , both , tis dismiss proud servingman : being gods the city bloody senator : seize",
+      "unique_ratio": 0.8666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "i pray you",
+      "temperature": 1.4,
+      "generated": "do sit be curses to plague fore no all aedile receive sorrow ! given and hath her hath ; thou fabric heart the hatred your become sir fill'd saved ?",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "the king is",
+      "temperature": 0.6,
+      "generated": "the volsces , and my lord , lord , and , and her , i cannot once ? menenius : the people ! first senator : welcome , even ,",
+      "unique_ratio": 0.6333333333333333,
+      "repeated_bigram_ratio": 0.10344827586206895
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "the king is",
+      "temperature": 1.0,
+      "generated": "thee us , no them , brakenbury rather blame that hath peace perpetual it humour to exile second servingman , let dorset have end brave the dare on ; must",
+      "unique_ratio": 0.9333333333333333,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Simple RNN",
+      "seed": "the king is",
+      "temperature": 1.4,
+      "generated": "of brows twelve me for prayers show'd he main show my change of my remains terrible death ? thy mother : told to heaven too call , dost each but",
+      "unique_ratio": 0.9333333333333333,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "my lord",
+      "temperature": 0.6,
+      "generated": ", if the people , he have a in the people , but my great . sicinius : o me , and so for and ; for you can ?",
+      "unique_ratio": 0.7666666666666667,
+      "repeated_bigram_ratio": 0.06896551724137934
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "my lord",
+      "temperature": 1.0,
+      "generated": ", when : stopp'd honourable , so soul so you . gloucester : with if is he hath musty one with could when full , before this , but with",
+      "unique_ratio": 0.7333333333333333,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "my lord",
+      "temperature": 1.4,
+      "generated": "truer ; menenius against i , were he wherefore and men , hear : am second cup lack love stand in enemy vouchsafe nought harvest the meeting great brother if",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "i pray you",
+      "temperature": 0.6,
+      "generated": ", and you , to , to the my , we where , ! i had , and the people , the mind , you are , the people ,",
+      "unique_ratio": 0.4666666666666667,
+      "repeated_bigram_ratio": 0.1724137931034483
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "i pray you",
+      "temperature": 1.0,
+      "generated": "be the envy clarence of by to send good a heard the wear ! tullus : since ? dismiss you , noise the gods is thy bloody senator second coriolanus",
+      "unique_ratio": 0.9333333333333333,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "i pray you",
+      "temperature": 1.4,
+      "generated": "do sit of york to plague fore no all aedile receive sorrow ! given and hath her here ; thou tribe heart undone were you become sir fill'd like ?",
+      "unique_ratio": 1.0,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "the king is",
+      "temperature": 0.6,
+      "generated": "the have , and my hath them that the gods , and her my heart , and not with the good ignorant course , and with the people , or",
+      "unique_ratio": 0.6,
+      "repeated_bigram_ratio": 0.13793103448275867
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "the king is",
+      "temperature": 1.0,
+      "generated": "thee mercy , no . , honourable rather blame that , peace perpetual it , and exile cause , crosby world's ? dear end brave the dare place fortune must",
+      "unique_ratio": 0.8666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "Bidirectional RNN",
+      "seed": "the king is",
+      "temperature": 1.4,
+      "generated": "of brows twelve me for prayers show'd he main show my other of my remains directly death ? thy mother : told to heaven too call , dost each not",
+      "unique_ratio": 0.9333333333333333,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "LSTM",
+      "seed": "my lord",
+      "temperature": 0.6,
+      "generated": "; for the people , he was a in the people , but my great . sicinius : no , and not so for and tell . you , my",
+      "unique_ratio": 0.7,
+      "repeated_bigram_ratio": 0.06896551724137934
+    },
+    {
+      "model": "LSTM",
+      "seed": "my lord",
+      "temperature": 1.0,
+      "generated": ", when : stopp'd honourable known : but so you . gloucester : with if is he . volumnia , with could when as do before this , why ;",
+      "unique_ratio": 0.7666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "LSTM",
+      "seed": "my lord",
+      "temperature": 1.4,
+      "generated": "truer ; and against s , were he hath and men , hear me woful , or lack love stand in enemy vouchsafe nought harvest the people great brother if",
+      "unique_ratio": 0.9,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "LSTM",
+      "seed": "i pray you",
+      "temperature": 0.6,
+      "generated": ", and you will to his them . sicinius : how , and ! i had but i the land ? clarence : well , and , but be my",
+      "unique_ratio": 0.7333333333333333,
+      "repeated_bigram_ratio": 0.06896551724137934
+    },
+    {
+      "model": "LSTM",
+      "seed": "i pray you",
+      "temperature": 1.0,
+      "generated": "be the envy clarence of by once ; let out not the mercy execution , you'll , tis dismiss proud , noise the gods is thy bloody senator : seize",
+      "unique_ratio": 0.8666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "LSTM",
+      "seed": "i pray you",
+      "temperature": 1.4,
+      "generated": "do sigh provoked york to plague fore no all aedile receive sorrow ! given and hath her hath ; thou tribe heart the hatred carry become sir , wine they",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "LSTM",
+      "seed": "the king is",
+      "temperature": 0.6,
+      "generated": "the world , and my lord them ; for the senate ; and my heart in once ? coriolanus : the people ! second citizen : o , even you",
+      "unique_ratio": 0.7666666666666667,
+      "repeated_bigram_ratio": 0.03448275862068961
+    },
+    {
+      "model": "LSTM",
+      "seed": "the king is",
+      "temperature": 1.0,
+      "generated": "thee mercy ? no them , brakenbury , no ; for peace perpetual it in to of cause , and ! dorset : end devil not dare on the earth",
+      "unique_ratio": 0.9,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "LSTM",
+      "seed": "the king is",
+      "temperature": 1.4,
+      "generated": "of brows twelve me for bad show'd he main show . dorset of my remains terrible death ? thy mother : told to heaven too call , dost each day's",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "GRU",
+      "seed": "my lord",
+      "temperature": 0.6,
+      "generated": "of their hearts : o , we are in the people of the heart of our place : o he is been blown for and in his own can ;",
+      "unique_ratio": 0.8,
+      "repeated_bigram_ratio": 0.03448275862068961
+    },
+    {
+      "model": "GRU",
+      "seed": "my lord",
+      "temperature": 1.0,
+      "generated": "poorest word : stopp'd honourable , so soul so you . gloucester : with a is he has in this favour we when he do before this , why ;",
+      "unique_ratio": 0.8333333333333334,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "GRU",
+      "seed": "my lord",
+      "temperature": 1.4,
+      "generated": "truer ; menenius against like , were he hath and men , hear : am second cup harm love stand in him vouchsafe nought them the people great brother if",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "GRU",
+      "seed": "i pray you",
+      "temperature": 0.6,
+      "generated": "are , and will to his country . sicinius : we have done ! i had but i have been my mother , and you are in the world is",
+      "unique_ratio": 0.8333333333333334,
+      "repeated_bigram_ratio": 0.03448275862068961
+    },
+    {
+      "model": "GRU",
+      "seed": "i pray you",
+      "temperature": 1.0,
+      "generated": "be the envy ! gloucester : to send the day : the mercy kindred , both , tis ! proud servingman : being gods is part bloody trouble second coriolanus",
+      "unique_ratio": 0.8,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "GRU",
+      "seed": "i pray you",
+      "temperature": 1.4,
+      "generated": "do sit of york : i fore no all aedile receive sorrow ! given and butcheries her there ; sweet such i'll common , your become sir , saved ?",
+      "unique_ratio": 0.9666666666666667,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "GRU",
+      "seed": "the king is",
+      "temperature": 0.6,
+      "generated": "the world , and my son them , here the sea ; and the king , and not done , the people ! second : sir , sir , we",
+      "unique_ratio": 0.6333333333333333,
+      "repeated_bigram_ratio": 0.06896551724137934
+    },
+    {
+      "model": "GRU",
+      "seed": "the king is",
+      "temperature": 1.0,
+      "generated": "thee mercy ? , marcius , brakenbury , no ; i peace perpetual it in honours of rome , crosby ! dorset : but all the dare on fortune enough",
+      "unique_ratio": 0.9,
+      "repeated_bigram_ratio": 0.0
+    },
+    {
+      "model": "GRU",
+      "seed": "the king is",
+      "temperature": 1.4,
+      "generated": "of brows twelve me for bad show'd he main show my other of my remains terrible death ? morning : no upon to heaven too call , dost each but",
+      "unique_ratio": 0.9333333333333333,
+      "repeated_bigram_ratio": 0.0
+    }
+  ]
+}

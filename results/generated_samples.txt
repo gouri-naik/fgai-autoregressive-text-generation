@@ -1,0 +1,108 @@
+Simple RNN | seed: my lord | temperature: 0.6
+; for this , to say a man in the people of the heart of . sicinius : no , though , and for you are stay not , nor
+
+Simple RNN | seed: my lord | temperature: 1.0
+, when : stopp'd honourable , which soul so voices . ope ! absence : is he hath musty , with could when full ; for this , why ;
+
+Simple RNN | seed: my lord | temperature: 1.4
+truer ; menenius against employ , were he hath and wild , hear : am second cup lack love stand honour him vouchsafe nought harvest the people great brother if
+
+Simple RNN | seed: i pray you | temperature: 0.6
+, and you will be , and it is the gods ; and ! i had general ? brutus : but the city , you are , the people ,
+
+Simple RNN | seed: i pray you | temperature: 1.0
+be the envy ! menenius by once ; let out not the mercy fault , both , tis dismiss proud servingman : being gods the city bloody senator : seize
+
+Simple RNN | seed: i pray you | temperature: 1.4
+do sit be curses to plague fore no all aedile receive sorrow ! given and hath her hath ; thou fabric heart the hatred your become sir fill'd saved ?
+
+Simple RNN | seed: the king is | temperature: 0.6
+the volsces , and my lord , lord , and , and her , i cannot once ? menenius : the people ! first senator : welcome , even ,
+
+Simple RNN | seed: the king is | temperature: 1.0
+thee us , no them , brakenbury rather blame that hath peace perpetual it humour to exile second servingman , let dorset have end brave the dare on ; must
+
+Simple RNN | seed: the king is | temperature: 1.4
+of brows twelve me for prayers show'd he main show my change of my remains terrible death ? thy mother : told to heaven too call , dost each but
+
+Bidirectional RNN | seed: my lord | temperature: 0.6
+, if the people , he have a in the people , but my great . sicinius : o me , and so for and ; for you can ?
+
+Bidirectional RNN | seed: my lord | temperature: 1.0
+, when : stopp'd honourable , so soul so you . gloucester : with if is he hath musty one with could when full , before this , but with
+
+Bidirectional RNN | seed: my lord | temperature: 1.4
+truer ; menenius against i , were he wherefore and men , hear : am second cup lack love stand in enemy vouchsafe nought harvest the meeting great brother if
+
+Bidirectional RNN | seed: i pray you | temperature: 0.6
+, and you , to , to the my , we where , ! i had , and the people , the mind , you are , the people ,
+
+Bidirectional RNN | seed: i pray you | temperature: 1.0
+be the envy clarence of by to send good a heard the wear ! tullus : since ? dismiss you , noise the gods is thy bloody senator second coriolanus
+
+Bidirectional RNN | seed: i pray you | temperature: 1.4
+do sit of york to plague fore no all aedile receive sorrow ! given and hath her here ; thou tribe heart undone were you become sir fill'd like ?
+
+Bidirectional RNN | seed: the king is | temperature: 0.6
+the have , and my hath them that the gods , and her my heart , and not with the good ignorant course , and with the people , or
+
+Bidirectional RNN | seed: the king is | temperature: 1.0
+thee mercy , no . , honourable rather blame that , peace perpetual it , and exile cause , crosby world's ? dear end brave the dare place fortune must
+
+Bidirectional RNN | seed: the king is | temperature: 1.4
+of brows twelve me for prayers show'd he main show my other of my remains directly death ? thy mother : told to heaven too call , dost each not
+
+LSTM | seed: my lord | temperature: 0.6
+; for the people , he was a in the people , but my great . sicinius : no , and not so for and tell . you , my
+
+LSTM | seed: my lord | temperature: 1.0
+, when : stopp'd honourable known : but so you . gloucester : with if is he . volumnia , with could when as do before this , why ;
+
+LSTM | seed: my lord | temperature: 1.4
+truer ; and against s , were he hath and men , hear me woful , or lack love stand in enemy vouchsafe nought harvest the people great brother if
+
+LSTM | seed: i pray you | temperature: 0.6
+, and you will to his them . sicinius : how , and ! i had but i the land ? clarence : well , and , but be my
+
+LSTM | seed: i pray you | temperature: 1.0
+be the envy clarence of by once ; let out not the mercy execution , you'll , tis dismiss proud , noise the gods is thy bloody senator : seize
+
+LSTM | seed: i pray you | temperature: 1.4
+do sigh provoked york to plague fore no all aedile receive sorrow ! given and hath her hath ; thou tribe heart the hatred carry become sir , wine they
+
+LSTM | seed: the king is | temperature: 0.6
+the world , and my lord them ; for the senate ; and my heart in once ? coriolanus : the people ! second citizen : o , even you
+
+LSTM | seed: the king is | temperature: 1.0
+thee mercy ? no them , brakenbury , no ; for peace perpetual it in to of cause , and ! dorset : end devil not dare on the earth
+
+LSTM | seed: the king is | temperature: 1.4
+of brows twelve me for bad show'd he main show . dorset of my remains terrible death ? thy mother : told to heaven too call , dost each day's
+
+GRU | seed: my lord | temperature: 0.6
+of their hearts : o , we are in the people of the heart of our place : o he is been blown for and in his own can ;
+
+GRU | seed: my lord | temperature: 1.0
+poorest word : stopp'd honourable , so soul so you . gloucester : with a is he has in this favour we when he do before this , why ;
+
+GRU | seed: my lord | temperature: 1.4
+truer ; menenius against like , were he hath and men , hear : am second cup harm love stand in him vouchsafe nought them the people great brother if
+
+GRU | seed: i pray you | temperature: 0.6
+are , and will to his country . sicinius : we have done ! i had but i have been my mother , and you are in the world is
+
+GRU | seed: i pray you | temperature: 1.0
+be the envy ! gloucester : to send the day : the mercy kindred , both , tis ! proud servingman : being gods is part bloody trouble second coriolanus
+
+GRU | seed: i pray you | temperature: 1.4
+do sit of york : i fore no all aedile receive sorrow ! given and butcheries her there ; sweet such i'll common , your become sir , saved ?
+
+GRU | seed: the king is | temperature: 0.6
+the world , and my son them , here the sea ; and the king , and not done , the people ! second : sir , sir , we
+
+GRU | seed: the king is | temperature: 1.0
+thee mercy ? , marcius , brakenbury , no ; i peace perpetual it in honours of rome , crosby ! dorset : but all the dare on fortune enough
+
+GRU | seed: the king is | temperature: 1.4
+of brows twelve me for bad show'd he main show my other of my remains terrible death ? morning : no upon to heaven too call , dost each but
+
